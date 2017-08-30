@@ -1,5 +1,5 @@
-if (!exists("skip")) {
-  stop("foo")
+if (exists("skip")) {
+  skip("skip exists!")
 } else {
-  stop("bar")
+  stop("nope nope nope, skip does not exist")
 }
